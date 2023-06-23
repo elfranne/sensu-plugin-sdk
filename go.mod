@@ -1,4 +1,4 @@
-module github.com/sensu/sensu-plugin-sdk
+module github.com/elfranne/sensu-plugin-sdk
 
 go 1.18
 

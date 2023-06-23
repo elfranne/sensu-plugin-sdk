@@ -6,8 +6,8 @@ import (
 	"log"
 	"os"
 
+	"github.com/elfranne/sensu-plugin-sdk/httpclient"
 	corev2 "github.com/sensu/core/v2"
-	"github.com/sensu/sensu-plugin-sdk/httpclient"
 )
 
 func main() {

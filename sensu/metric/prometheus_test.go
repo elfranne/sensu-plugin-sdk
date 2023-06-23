@@ -8,10 +8,10 @@ import (
 	"testing"
 	"time"
 
+	"github.com/elfranne/sensu-plugin-sdk/sensu/metric"
 	dto "github.com/prometheus/client_model/go"
 	"github.com/prometheus/common/expfmt"
 	corev2 "github.com/sensu/core/v2"
-	"github.com/sensu/sensu-plugin-sdk/sensu/metric"
 	"github.com/stretchr/testify/assert"
 )
 

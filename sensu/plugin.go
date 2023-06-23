@@ -12,9 +12,9 @@ import (
 	"reflect"
 	"strings"
 
+	"github.com/elfranne/sensu-plugin-sdk/version"
 	"github.com/google/go-cmp/cmp"
 	corev2 "github.com/sensu/core/v2"
-	"github.com/sensu/sensu-plugin-sdk/version"
 	"github.com/spf13/cobra"
 	"github.com/spf13/viper"
 )
@@ -40,7 +40,7 @@ type ConfigOption interface {
 // OptionValue is a type constraint that creates a compile-time guard against
 // creating a PluginConfigOption with an unsupported data type.
 type OptionValue interface {
-	~int | ~int32 | ~int64 | ~uint | ~uint32 | ~uint64 | ~float32 | ~float64 | ~bool | ~string
+	~int | ~int32 | ~int64 | ~uint | ~uint32 | ~uint64 | ~float32 | ~float64 | ~bool | ~string | ~[]string
 }
 
 // SliceOptionValue is like OptionValue but applies to SlicePluginConfigOption.
